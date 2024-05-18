@@ -1,8 +1,62 @@
-.main-section{
+.main-section {
     background-image: url("../img/home-bg.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
     width: 100%;
-    height: 100vh;
+    height: 100%;
+}
+
+.home {
+    padding: 9% 39px;
+    &-content {
+        & h2 {
+            color: $heading;
+            font-family: $font-1;
+            font-size: 85px;
+            font-weight: 400;
+            line-height: 100%;
+        }
+        & p {
+            color: $text;
+            -webkit-text-stroke-width: 0.10000000149011612px;
+            -webkit-text-stroke-color: $text;
+            font-family: $font-2;
+            font-size: 24px;
+            line-height: 160%;
+            margin-bottom: 48px;
+        }
+        & button {
+            color: $black;
+            font-family: $font-2;
+            font-size: 24px;
+            position: relative;
+            z-index: 1;
+            &::after{
+                content: "";
+                width: 147px;
+                height: 48px;
+                position: absolute;
+                z-index: -1;
+                left: 0;
+                top: 0;
+                background-image: url("../img/home-button.png");
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    }
+
+    &-image {
+        width: 508px;
+        height: 508px;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+
+        }
+    }
 }

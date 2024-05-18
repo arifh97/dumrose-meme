@@ -9,7 +9,9 @@ export default function Mainpage() {
           <Navitem/>
         </div>
         <div className="col-md-10">
+          <div className="d-flex align-items-center justify-content-center h-100">
             <Outlet/>
+          </div>
         </div>
      </div>
      <Footer/>

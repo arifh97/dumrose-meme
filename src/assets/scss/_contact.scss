@@ -1,0 +1,23 @@
+.contact {
+    &-content {
+        & h1 {
+            color: #101212;
+            // font-family: "ms-Sans-Serif-Bold";
+            font-size: 68px;
+            font-weight: 400;
+            line-height: 120%;
+            margin-bottom: 24px;
+        }
+
+        p {
+            color: #3E4242;
+            -webkit-text-stroke-width: 0.10000000149011612;
+            -webkit-text-stroke-color: var(--Paragraph, #3E4242);
+            // font-family: "MS Sans Serif";
+            font-size: 24px;
+            font-weight: 400;
+            line-height: 160%;
+            margin-bottom: 54px;
+        }
+    }
+}
