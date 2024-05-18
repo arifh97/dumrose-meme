@@ -1,0 +1,25 @@
+.navitem {
+    ul {
+        margin-top: 40px;
+        li {
+            margin-bottom: 40px;
+            cursor: pointer;
+            img {
+                width: 40px;
+                height: 40px;
+                object-fit: contain;
+                margin-bottom: 5px;
+            }
+            p {
+                color:#FFF;
+                text-align: center;
+                -webkit-text-stroke-width: 0.2806701958179474;
+                -webkit-text-stroke-color: #FFF;
+                font-family: "MS-Sans-Serif";
+                font-size: 26px;
+                font-weight: 400;
+                line-height: 140%
+            }
+        }
+    }
+}
