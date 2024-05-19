@@ -10,9 +10,9 @@ export default function Home() {
       <div className="home">
           <div className="home-wrapper d-flex  justify-content-center  align-items-center ">
             <div className="row m-auto align-items-center  ">
-              <div className="col-md-7">
+              <div className="col-md-7 order-2 order-md-1">
                 <div className="home-content">
-                  <h2 className="mb-4">Welcome to DumRose! </h2>
+                  <h1 className="mb-4">Welcome to DumRose! </h1>
                   <p>
                     Rose was a relentless enforcer, handing out timeouts and
                     bans with cold, mechanical precision. Many degens found
@@ -23,7 +23,7 @@ export default function Home() {
                   <a href="#" className="boxed-btn">Get Banned</a>
                 </div>
               </div>
-              <div className="col-md-5">
+              <div className="col-md-5 order-1 order-md-2">
                 <div className="home-image">
                   <img src={homeimg} alt="" />
                 </div>

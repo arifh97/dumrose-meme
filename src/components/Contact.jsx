@@ -5,7 +5,7 @@ export default function Contact() {
     <ContentFrame icon={Icon} name="Contact">
     <div className="contact">
         <div className="row justify-content-center align-items-center">
-          <div className="col-9">
+          <div className="col-md-9">
             <div className="contact-content text-center ">
               <h2>Contact Us</h2>
               <p>Send us a message on twitter or email and if Rose lets us out of the basement we will get back to you asap.</p>

@@ -269,13 +269,22 @@ input::-webkit-inner-spin-button {
     &-topBar{
         background: var(--blue-200, #02007F);
         padding: 7.137px 5.71px 7.137px 11.419px;
+        .tmIcon {
+            max-width: 40px;
+            @include mmd{
+                max-width: 30px;
+            }
+        }
         span{
             color: var(--mono-white, #FFF);
             font-family: "MS-Sans-Serif";
-            font-size: 36px;
+            @include font-36;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            @include mmd{
+                font-size: 25px;
+            }
         }
         .topRight{
             button{
@@ -288,6 +297,10 @@ input::-webkit-inner-spin-button {
                 transition: all .3s ease-in-out;
                 &:hover{
                     opacity: .5;
+                }
+                @include mmd{
+                    width: 35px;
+                    height: 35px;
                 }
             }
         }

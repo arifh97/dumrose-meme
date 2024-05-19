@@ -1,3 +1,17 @@
 .tokenomics{
     padding-inline: 90px;
+    @include lg{
+        padding-inline: 60px;
+    }
+    @include mmd{
+        padding-inline: 40px;
+    }
+    .chart-image{
+        @include sm{
+            text-align: center;
+        }
+        img{
+            max-width: 300px;
+        }
+    }
 }

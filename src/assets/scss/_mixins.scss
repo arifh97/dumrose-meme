@@ -55,26 +55,26 @@
 @mixin h1-font-size {
     font-size: 85px;
     @include lg {
-        font-size: 75px;
-    }
-    @include md {
-        font-size: 65px;
-    }
-    @include sm {
-        font-size: 55px;
-    }
-}
-
-@mixin h2_font_size {
-    font-size: 68px;
-    @include lg {
         font-size: 60px;
     }
     @include md {
         font-size: 50px;
     }
     @include sm {
-        font-size: 45px;
+        font-size: 40px;
+    }
+}
+
+@mixin h2_font_size {
+    font-size: 68px;
+    @include lg {
+        font-size: 50px;
+    }
+    @include md {
+        font-size: 40px;
+    }
+    @include sm {
+        font-size: 35px;
     }
 }
 
@@ -112,8 +112,14 @@
 }
 @mixin font-24 {
     font-size: 24px;
+    @include lg {
+        font-size: 22px;
+    }
     @include mmd {
         font-size: 20px;
+    }
+    @include sm {
+        font-size: 18px;
     }
 }
 

@@ -21,12 +21,14 @@ export default function Navitem() {
   return (
     <div className="navitem">
         <ul className="text-center">
-           {
-            navitem.map((item,idx)=>( <NavLink to={`${item.url}`} key={idx}><li>
-                <img src={item.img} alt="" />
-                <p>{item.title}</p>
-            </li></NavLink>))
-           }
+            {navitem.map((item,idx)=>( 
+              <li>
+                <NavLink to={`${item.url}`} key={idx}>
+                    <img src={item.img} alt="" />
+                    <p>{item.title}</p>
+                </NavLink>
+              </li>
+            ))}
         </ul>
     </div>
   )

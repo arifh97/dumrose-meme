@@ -1,14 +1,31 @@
 .navitem {
     ul {
         margin-top: 40px;
+        @include sm{
+            margin-bottom: 0px;
+            margin-top: 10px;
+        }
         li {
             margin-bottom: 30px;
             cursor: pointer;
+            @include sm{
+                margin-bottom: 5px;
+                margin-inline: 15px;
+                display: inline-block;
+            }
             img {
                 width: 40px;
                 height: 40px;
                 object-fit: contain;
                 margin-bottom: 0px;
+                @include md{
+                    width: 30px;
+                    height: 30px;
+                }
+                @include sm{
+                    width: 20px;
+                    height: 20px;
+                }
             }
             p {
                 color:$white;
@@ -17,7 +34,13 @@
                 -webkit-text-stroke-color: #FFF;
                 @include font-26;
                 text-transform: capitalize;
-                line-height: 140%
+                line-height: 140%;
+                @include md{
+                    font-size: 16px;
+                }
+                @include sm{
+                    font-size: 14px;
+                }
             }
         }
     }
