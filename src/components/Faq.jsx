@@ -36,7 +36,6 @@ export default function Faq() {
   return (
     <ContentFrame icon={Icon} name="FAQ">
       <div className="faq">
-        <div className="container">
           <div className="row">           
             <div className="col-12">
               <div className="section-title text-center">
@@ -59,7 +58,6 @@ export default function Faq() {
             </div>
           </div>
         </div>
-      </div>
     </ContentFrame>
   );
 }

@@ -8,7 +8,6 @@ export default function Home() {
   return (
     <ContentFrame icon={HomeIcon} name="Home">
       <div className="home">
-        <div className="container">
           <div className="home-wrapper d-flex  justify-content-center  align-items-center ">
             <div className="row m-auto align-items-center  ">
               <div className="col-md-7">
@@ -32,7 +31,6 @@ export default function Home() {
             </div>
           </div>
         </div>
-      </div>
     </ContentFrame>
   );
 }

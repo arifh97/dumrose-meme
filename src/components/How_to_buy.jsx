@@ -24,7 +24,6 @@ export default function How_to_buy() {
   return (
     <ContentFrame icon={Icon} name="How To Buy">
     <div className="howtoBuy">
-      <div className="container">
           <div className="row justify-content-center">
             <div className="col-9 text-center">
               <div className="section-title ">
@@ -48,7 +47,6 @@ export default function How_to_buy() {
           ))}
         </div>
       </div>
-    </div>
   </ContentFrame>
   )
 }

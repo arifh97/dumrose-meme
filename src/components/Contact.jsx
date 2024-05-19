@@ -4,7 +4,6 @@ export default function Contact() {
   return (
     <ContentFrame icon={Icon} name="Contact">
     <div className="contact">
-      <div className="container">
         <div className="row justify-content-center align-items-center">
           <div className="col-9">
             <div className="contact-content text-center ">
@@ -18,7 +17,6 @@ export default function Contact() {
           </div>
         </div>
       </div>
-    </div>
   </ContentFrame>
   )
 }

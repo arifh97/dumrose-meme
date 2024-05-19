@@ -1,0 +1,70 @@
+
+.chart{
+    width: 100%;
+    height:70vh;
+    position: relative;
+    .chart-content{
+        margin-inline: 48px;
+        background: var(--mono-100, #C3C3C3);
+        box-shadow: -2.047px -2.047px 0px 0px #262626 inset, 2.047px 2.047px 0px 0px #F0F0F0 inset, -4.094px -4.094px 0px 0px #7E7E7E inset, 4.094px 4.094px 0px 0px #B1B1B1 inset;
+        padding: 10px;
+        height: 80%;
+        .chartTopBar{
+            background: var(--blue-200, #02007F);
+            padding: 5.118px 4.094px 5.118px 8.189px;
+            .topLeft{
+                img{
+                    max-width: 25px;
+                }
+            }
+            .topRight{
+                button{
+                    background: transparent;
+                    padding: 0;
+                    border: 0;
+                    width: 32.755px;
+                    height: 32.755px;
+                    margin-left: 2px;
+                }
+            }
+        }
+        .chart-details{
+            position: relative;
+            background: var(--mono-white, #FFF);
+            box-shadow: 2.047px 2.047px 0px 0px #262626 inset, -2.047px -2.047px 0px 0px #F0F0F0 inset, 4.094px 4.094px 0px 0px #7E7E7E inset;
+            overflow: hidden;
+            width: 100%;
+            height: 80%;
+            .chartImg{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .chart-tab-navs {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 12px;
+        background: var(--mono-100, #C3C3C3);
+        box-shadow: 2px 2px 0px 0px #F0F0F0 inset;
+        padding: 8px;
+        a{
+            color: $black;
+            -webkit-text-stroke-width: 0.30000001192092896px;
+            -webkit-text-stroke-color: var(--mono-black, #000);
+            @include font-26;
+            background: var(--mono-100, #C3C3C3);
+            box-shadow: -2px -2px 0px 0px #262626 inset, 2px 2px 0px 0px #F0F0F0 inset, -4px -4px 0px 0px #7E7E7E inset, 4px 4px 0px 0px #B1B1B1 inset;
+            padding: 10px 25.912px 10px 8px;
+            img{
+                max-width: 26px;
+            }
+        }
+        a.active{
+            background: var(--mono-50, #E3E3E3);
+            box-shadow: 2px 2px 0px 0px #262626 inset, -2px -2px 0px 0px #F0F0F0 inset, 4px 4px 0px 0px #7E7E7E inset, -4px -4px 0px 0px #B1B1B1 inset;
+        }
+    }
+    
+}

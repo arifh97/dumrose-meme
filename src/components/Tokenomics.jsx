@@ -5,7 +5,6 @@ export default function Tokenomics() {
   return (
     <ContentFrame icon={Icon} name="Tokenomics">
     <div className="tokenomics">
-      <div className="container">
           <div className="row align-items-center">           
             <div className="col-md-7">
               <div className="about-content">
@@ -20,7 +19,6 @@ export default function Tokenomics() {
             </div>
           </div>
       </div>
-    </div>
   </ContentFrame>
   )
 }
