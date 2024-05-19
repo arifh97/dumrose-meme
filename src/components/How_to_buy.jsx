@@ -35,7 +35,7 @@ export default function How_to_buy() {
         </div>
         <div className="row justify-content-center">
           {howtoBuyWrapper.map((item, index)=>(
-            <div className="col-lg-4 text-center" key={index}>
+            <div className="col-lg-4 col-6 mb-4 text-center" key={index}>
               <div className="single-item">
                 <figure className="icon">
                   <img src={item.icon} alt="" />

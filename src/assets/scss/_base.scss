@@ -334,3 +334,40 @@ input::-webkit-inner-spin-button {
         justify-content: center;
     }
 }
+
+.contentFrame {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+  }
+  
+  .contentFrame.zoomed {
+    transform: scale(1.155);
+  }
+  
+  .contentFrame.closing {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  /* Optional: Add more styling for .contentFrame, .contentFrame-topBar, etc. */
+  .contentFrame {
+    transition: all 0.3s ease;
+  }
+  
+  .contentFrame.closing {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  
+  .contentFrame.zoomed {
+    transform: scale(1.1);
+  }
+  
+  .contentFrame .contentFrame-details {
+    transition: max-height 0.3s ease;
+  }
+  
+  .contentFrame.minimized .contentFrame-details {
+    max-height: 0;
+    overflow: hidden;
+  }
+  

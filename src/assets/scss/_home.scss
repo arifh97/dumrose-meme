@@ -1,11 +1,20 @@
 .home {
     padding: 9% 39px;
+    @include mmd{
+        padding-right: 20px;
+    }
+    @include mmd{
+        padding-inline: 20px;
+    }
     &-content {
         @include sm{
             text-align: center;
         }
         & h1 {
             line-height: 130%;
+            @include mmd{
+                padding-top: 20px;
+            }
         }
         & p {
             color: $text;

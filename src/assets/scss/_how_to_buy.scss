@@ -1,6 +1,9 @@
 .howtoBuy{
     padding: 5%;
     padding-bottom: 6%;
+    @include mmd{
+        padding-top: 300px;
+    }
     .section-title{
         margin-bottom: 6%;
     }

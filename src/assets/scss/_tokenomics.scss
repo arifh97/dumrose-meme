@@ -4,14 +4,17 @@
         padding-inline: 60px;
     }
     @include mmd{
-        padding-inline: 40px;
+        padding-inline: 30px;
     }
     .chart-image{
         @include sm{
             text-align: center;
         }
-        img{
-            max-width: 300px;
+        @include sm{
+            img{
+                max-width: 300px;
+            }
         }
+        
     }
 }
