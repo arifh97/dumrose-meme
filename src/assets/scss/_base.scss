@@ -115,7 +115,24 @@ nav ul li {
     @include transition;
 }
 
-
+/* custom scroll bar  */
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 8px #02007F;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: #02007F;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: #02007F;
+  }
 
 /*Hide number spin button*/
 
@@ -311,7 +328,7 @@ input::-webkit-inner-spin-button {
         display: block;
         height: 100%;
         padding: 10px;
-        overflow: hidden;
+        overflow: scroll;
         display: flex;
         align-items: center;
         justify-content: center;
