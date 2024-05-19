@@ -3,6 +3,7 @@ import Icon from "../assets/img/icon3.png";
 import walletIcon from "../assets/img/walletIcon.png";
 import amountIcon from "../assets/img/amountIcon.png";
 import readyIcon from "../assets/img/readyIcon.png";
+import CopyToClipboard from "./CopyToClipboard";
 export default function How_to_buy() {
   const howtoBuyWrapper = [
     {
@@ -45,6 +46,11 @@ export default function How_to_buy() {
           </div>
 
           ))}
+        </div>
+        <div className="row">
+          <div className="col-12">
+              <CopyToClipboard />
+          </div>
         </div>
       </div>
   </ContentFrame>

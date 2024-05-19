@@ -2,22 +2,21 @@
     ul {
         margin-top: 40px;
         li {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
             cursor: pointer;
             img {
                 width: 40px;
                 height: 40px;
                 object-fit: contain;
-                margin-bottom: 5px;
+                margin-bottom: 0px;
             }
             p {
-                color:#FFF;
+                color:$white;
                 text-align: center;
-                -webkit-text-stroke-width: 0.2806701958179474;
+                -webkit-text-stroke-width: 0.2806701958179474px;
                 -webkit-text-stroke-color: #FFF;
-                font-family: "MS-Sans-Serif";
-                font-size: 26px;
-                font-weight: 400;
+                @include font-26;
+                text-transform: capitalize;
                 line-height: 140%
             }
         }

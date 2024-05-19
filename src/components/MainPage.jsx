@@ -3,8 +3,8 @@ import Footer from "./Footer";
 import Navitem from "./Navitem";
 export default function Mainpage() {
   return (
-    <div className="main-section">
-     <div className="row align-items-center">
+    <div className="main-section h-100">
+     <div className="row align-items-center mainRow">
         <div className="col-md-2">
           <Navitem/>
         </div>
