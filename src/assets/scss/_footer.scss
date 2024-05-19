@@ -19,10 +19,16 @@
             margin-right: 3px;
         }
     }
+    .pageName{
+        background: var(--mono-50, #E3E3E3);
+        box-shadow: 2px 2px 0px 0px #262626 inset, -2px -2px 0px 0px #F0F0F0 inset, 4px 4px 0px 0px #7E7E7E inset, -4px -4px 0px 0px #B1B1B1 inset;
+        min-width: 264px;
+    }
     .copyright{
-        padding: 7px 12px;
+        padding: 2px 8px;
         display: inline-block;
         background: var(--mono-100, #C3C3C3);
         box-shadow: -2px -2px 0px 0px #F0F0F0 inset, 2px 2px 0px 0px #7E7E7E inset;
+        margin-bottom: -2px;
     }
 }

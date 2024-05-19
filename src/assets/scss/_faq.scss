@@ -1,0 +1,83 @@
+.faq {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 1;
+    max-width: 832px;
+    width: 100%;
+    margin-inline: auto;
+    & .section__title {
+        margin-bottom: 66px;
+        @include sm{
+            margin-bottom: 30px;
+        }
+    }
+    & .accordion-item {
+        margin-bottom: 20px;
+        padding: 24px;
+        position: relative;
+        background: $white;
+        box-shadow: 2px 2px 0px 0px #262626 inset, -2px -2px 0px 0px #F0F0F0 inset, 4px 4px 0px 0px #7E7E7E inset;
+        & .accordion-button {
+            @include font-24;
+            -webkit-text-stroke-width: 0.10000000149011612px;
+            -webkit-text-stroke-color: var(--mono-black, #000);
+            background: transparent;
+            line-height: 160%;
+            color: $black;
+            padding: 0;
+        }
+        & .accordion-body {
+            padding: 0;
+            padding-top:15px;
+            @include font-20;
+            line-height: 160%;
+            display: block;
+            color: $text;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            font-weight: 400;
+        }
+    }
+    & .accordion {
+        --bs-accordion-border-color: transparent;
+        --bs-accordion-btn-focus-border-color: transparent;
+        --bs-accordion-btn-focus-box-shadow: 0 0 0 0rem transparent;
+        --bs-accordion-inner-border-radius: 10px - 10px;
+    }
+    .accordion-button:not(.collapsed)::after {
+        background-image: url('../img/minus.svg');
+        background-size: 40px;
+        background-repeat: no-repeat;
+        @include transition;
+        position: absolute;
+        content: "";
+        right: -5px;
+        width: 55.72px;
+        height: 55.72px;
+        --bs-accordion-btn-icon-transform: rotate(0deg);
+        transform: var(--bs-accordion-btn-icon-transform);
+        @include sm{
+            right: -15px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+    .accordion-button::after {
+        background-image: url('../img/plus.svg');
+        background-position: center center;
+        background-size: 40px;
+        background-repeat: no-repeat;
+        @include transition;
+        position: absolute;
+        content: "";
+        right: -5px;
+        width: 55.72px;
+        height: 55.72px;
+        @include sm{
+            right: -15px;
+            width: 45px;
+            height: 45px;
+        }
+    }
+}

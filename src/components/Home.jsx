@@ -1,7 +1,10 @@
 import ContentFrame from "./ContentFrame";
 import HomeIcon from "../assets/img/icon1.png";
 import homeimg from "../assets/img/home-content-img.png";
+import { useLocation } from "react-router-dom";
 export default function Home() {
+  const location = useLocation();
+  console.log(location);
   return (
     <ContentFrame icon={HomeIcon} name="Home">
       <div className="home">

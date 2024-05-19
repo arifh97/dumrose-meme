@@ -1,9 +1,9 @@
 import ContentFrame from "./ContentFrame";
-import aboutIcon from "../assets/img/icon2.png";
+import Icon from "../assets/img/icon2.png";
 import chart from "../assets/img/chart.png";
 export default function Tokenomics() {
   return (
-    <ContentFrame icon={aboutIcon} name="Tokenomics">
+    <ContentFrame icon={Icon} name="Tokenomics">
     <div className="tokenomics">
       <div className="container">
           <div className="row align-items-center">           

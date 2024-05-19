@@ -265,7 +265,7 @@ input::-webkit-inner-spin-button {
 }
 
 .contentFrame{
-    max-width: 1268px;
+    width: 1268px;
     overflow: hidden;
     margin-inline: auto;
     padding: 4px;
@@ -307,5 +307,6 @@ input::-webkit-inner-spin-button {
         overflow: hidden;
         display: flex;
         align-items: center;
+        justify-content: center;
     }
 }
