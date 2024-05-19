@@ -18,7 +18,7 @@ export default function Home() {
                     reasons. The villagers were fed up with Rose's demonic
                     measures. Thus, a movement was born: the DumRose Revolution.
                   </p>
-                  <button>Get Banned</button>
+                  <a href="#" className="boxed-btn">Get Banned</a>
                 </div>
               </div>
               <div className="col-md-5">

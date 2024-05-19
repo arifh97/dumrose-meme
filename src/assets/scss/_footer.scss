@@ -1,0 +1,28 @@
+.footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: var(--mono-100, #C3C3C3);
+    box-shadow: 2px 2px 0px 0px #F0F0F0 inset;
+    padding: 8px;
+    color: $black;
+    -webkit-text-stroke-width: 0.10000000149011612px;
+    -webkit-text-stroke-color: $black;
+    button{
+        background: var(--mono-100, #C3C3C3);
+        box-shadow: -2px -2px 0px 0px #262626 inset, 2px 2px 0px 0px #F0F0F0 inset, -4px -4px 0px 0px #7E7E7E inset, 4px 4px 0px 0px #B1B1B1 inset;
+        padding: 6px 16px 6px 12px;
+        img{
+            max-width: 32px;
+            margin-right: 3px;
+        }
+    }
+    .copyright{
+        padding: 7px 12px;
+        display: inline-block;
+        background: var(--mono-100, #C3C3C3);
+        box-shadow: -2px -2px 0px 0px #F0F0F0 inset, 2px 2px 0px 0px #7E7E7E inset;
+    }
+}

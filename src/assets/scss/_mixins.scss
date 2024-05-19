@@ -53,64 +53,50 @@
 }
 
 @mixin h1-font-size {
-    line-height: normal;
-    @include xxxl{
-        font-size: 155px;
+    font-size: 85px;
+    @include lg {
+        font-size: 75px;
     }
-    @media(max-width:1619px) {
-        font-size: calc(55px + 100 * ((100vw - 360px) / 1380));
+    @include md {
+        font-size: 65px;
+    }
+    @include sm {
+        font-size: 55px;
     }
 }
 
 @mixin h2_font_size {
-    @include xxxl{
-        font-size: 110px;
+    font-size: 68px;
+    @include lg {
+        font-size: 60px;
     }
-    font-size: calc(45px + 65 * ((100vw - 360px) / 1380));
-    line-height: normal;
+    @include md {
+        font-size: 50px;
+    }
+    @include sm {
+        font-size: 45px;
+    }
 }
 
 
 
 @mixin h3_font_size {
-    line-height: normal;
-    @include xxxl{
-        font-size: 56px;
-    }
-    font-size: calc(30px + 26 * ((100vw - 360px) / 1380));
-}
-
-
-
-@mixin h4_font_size {
-    line-height: normal;
-    @include xxxl{
-        font-size: 48px;
-    }
-    font-size: calc(28px + 20 * ((100vw - 360px) / 1380));
-}
-
-@mixin font-52 {
-    font-size: 52px;
-    line-height: normal;
+    font-size: 26px;
     @include lg {
-        font-size: 45px;
+        font-size: 24px;
     }
     @include md {
-        font-size: 40px;
+        font-size: 22px;
     }
     @include sm {
-        font-size: 35px;
+        font-size: 20px;
     }
 }
 
-@mixin font-40 {
-    font-size: 40px;
-    line-height: normal;
-    @include lg {
-        font-size: 35px;
-    }
-    @include md {
+
+@mixin font-36 {
+    font-size: 36px;
+    @include mmd {
         font-size: 30px;
     }
     @include sm {
@@ -118,49 +104,14 @@
     }
 }
 
-@mixin font-48 {
-    font-size: 48px;
-    line-height: normal;
-    @include lg {
-        font-size: 40px;
-    }
-    @include md {
-        font-size: 35px;
-    }
-    @include sm {
-        font-size: 30px;
-    }
-}
-
-
-@mixin font-32 {
-    font-size: 32px;
-    line-height: normal;
-    @include lg {
-        font-size: 28px;
-    }
-    @include md {
-        font-size: 25px;
-    }
-    @include sm {
+@mixin font-26 {
+    font-size: 26px;
+    @include mmd {
         font-size: 22px;
     }
 }
-
-@mixin font-28 {
-    font-size: 27px;
-    line-height: normal;
-    @include lg {
-        font-size: 26px;
-    }
-    @include mmd {
-        font-size: 24px;
-    }
-}
-
 @mixin font-24 {
     font-size: 24px;
-    line-height: normal;
     @include mmd {
         font-size: 20px;
     }
@@ -168,14 +119,12 @@
 
 @mixin font-22 {
     font-size: 22px;
-    line-height: normal;
     @include mmd {
         font-size: 18px;
     }
 }
 @mixin font-20 {
     font-size: 20px;
-    line-height: normal;
     @include mmd {
         font-size: 18px;
     }
@@ -183,7 +132,6 @@
 
 @mixin font-18 {
     font-size: 18px;
-    line-height: normal;
     @include mmd {
         font-size: 16px;
     }
@@ -191,7 +139,6 @@
 
 @mixin font-15 {
     font-size: 15px;
-    line-height: normal;
     @include ssm {
         font-size: 14px;
     }

@@ -4,12 +4,11 @@ import aboutimg from "../assets/img/about-img.png";
 
 export default function About() {
   return (
-
     <ContentFrame icon={aboutIcon} name="About">
     <div className="about">
       <div className="container">
         <div className="about-wrapper">
-          <div className="row m-auto align-items-center justify-content-between  ">
+          <div className="row align-items-center">
           <div className="col-md-5">
               <div className="about-image">
                 <img src={aboutimg} alt="" />
