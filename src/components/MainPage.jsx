@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Footer from './Footer';
 import Navitem from './Navitem';
+import WindowsXPErrorSound from '../assets/audio/Windowsxpstartupsoundanderror.mp3';
 
 export default function Mainpage() {
   useEffect(() => {
@@ -10,7 +11,7 @@ export default function Mainpage() {
         const context = new (window.AudioContext || window.webkitAudioContext)();
         await context.resume(); // Resume the context first
 
-        const response = await fetch('/Windowsxpstartupsoundanderror.mp3'); // Make sure this path is correct
+        const response = await fetch(WindowsXPErrorSound); // Make sure this path is correct
         const arrayBuffer = await response.arrayBuffer();
         const audioBuffer = await context.decodeAudioData(arrayBuffer);
 
