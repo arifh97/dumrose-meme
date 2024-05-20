@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import minimizeIcon from "../assets/img/minimizeIcon.png";
 import zoomIcon from "../assets/img/zoomIcon.png";
 import closeIcon from "../assets/img/closeIcon.png";
+import Windowsxpstartupsoundanderror from "../assets/audio/Windowsxpstartupsoundanderror.mp3";
 
-// Define sound file path
-const soundFilePath = '/WindowsXPErrorSound.mp3';
+const soundFilePath = Windowsxpstartupsoundanderror;
 
 export default function ContentFrame({ icon, name, children }) {
     const [isMinimized, setIsMinimized] = useState(false);
@@ -12,10 +12,10 @@ export default function ContentFrame({ icon, name, children }) {
     const [isClosing, setIsClosing] = useState(false);
     const [isClosed, setIsClosed] = useState(false);
 
-    // Function to play the sound
     const playSound = () => {
         const audio = new Audio(soundFilePath);
-        audio.play();
+        console.log('Attempting to play sound:', audio);  // Log audio object
+        audio.play().catch(error => console.error('Error playing sound:', error));
     };
 
     const handleMinimize = () => {

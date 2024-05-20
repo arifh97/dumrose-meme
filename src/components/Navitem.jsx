@@ -7,9 +7,10 @@ import icon4 from '../assets/img/icon4.png';
 import icon5 from '../assets/img/icon5.png';
 import icon6 from '../assets/img/icon6.png';
 import icon7 from '../assets/img/icon7.png';
+import WindowsXPErrorSound from '../assets/audio/WindowsXPErrorSound.mp3';
 
 // Define your sound file path
-const soundFilePath = 'https://dumrose.netlify.app/WindowsXPErrorSound.mp3';
+const soundFilePath = WindowsXPErrorSound;
 
 const Navitem = () => {
   // Function to play the sound
