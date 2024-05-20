@@ -11,8 +11,6 @@ import Chart from './components/Chart';
 import Faq from './components/Faq';
 import Contact from './components/Contact';
 
-
-
 const router = createBrowserRouter([
   {
     path: "/",

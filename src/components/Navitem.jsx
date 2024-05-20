@@ -22,8 +22,8 @@ export default function Navitem() {
     <div className="navitem">
         <ul className="text-center">
             {navitem.map((item,idx)=>( 
-              <li>
-                <NavLink to={`${item.url}`} key={idx}>
+              <li  key={idx}>
+                <NavLink to={`${item.url}`}>
                     <img src={item.img} alt="" />
                     <p>{item.title}</p>
                 </NavLink>
