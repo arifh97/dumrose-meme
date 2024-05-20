@@ -10,8 +10,8 @@ export default function Contact() {
               <h2>Contact Us</h2>
               <p>Send us a message on twitter or email and if Rose lets us out of the basement we will get back to you asap.</p>
               <div>
-                <a href="#" className="boxed-btn">Telegram</a>
-                <a href="#" className="boxed-btn">Twitter</a>
+                <a href="https://google.com" target="_blank" className="boxed-btn">Telegram</a>
+                <a href="https://google.com" target="_blank" className="boxed-btn">Twitter</a>
               </div>
             </div>
           </div>

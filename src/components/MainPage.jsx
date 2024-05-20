@@ -8,7 +8,9 @@ export default function Mainpage() {
     const playAudio = async () => {
       try {
         const context = new (window.AudioContext || window.webkitAudioContext)();
-        const response = await fetch('/public/Windowsxpstartupsoundanderror.mp3'); // Update the path if necessary
+        await context.resume(); // Resume the context first
+
+        const response = await fetch('/Windowsxpstartupsoundanderror.mp3'); // Make sure this path is correct
         const arrayBuffer = await response.arrayBuffer();
         const audioBuffer = await context.decodeAudioData(arrayBuffer);
 
@@ -16,8 +18,6 @@ export default function Mainpage() {
         source.buffer = audioBuffer;
         source.connect(context.destination);
 
-        // Resume the context to ensure it plays
-        await context.resume();
         source.start(0);
       } catch (error) {
         console.log('Error playing audio:', error);
