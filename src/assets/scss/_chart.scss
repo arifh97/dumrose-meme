@@ -13,6 +13,7 @@
         z-index: 1;
         @include sm{
             height: 480px;
+            margin-inline: 0px;
         }
         .chartTopBar{
             background: var(--blue-200, #02007F);
@@ -85,11 +86,19 @@
             }
             @include sm{
                 font-size: 18px;
+                padding: 10px 15px 10px 8px;
+            }
+            @include ssm{
+                font-size: 14px;
+                padding: 10px 15px 10px 8px;
             }
             img{
                 max-width: 26px;
                 @include mmd{
                     max-width: 18px;
+                }
+                @include ssm{
+                    max-width: 16px;
                 }
             }
         }
@@ -109,19 +118,34 @@
     .tab-pane{
         height: 570px;
         overflow: hidden;
+        @include ssm{
+            height: 360px !important;
+        }
 
     }
     .chart-item{
         height: 570px;
         overflow: hidden;
+        @include ssm{
+            height: 300px !important;
+        }
     }
     .chart-details{
         height: 520px !important;
+        @include ssm{
+            height: 300px !important;
+        }
     }
     .chartImg{
         height: 520px !important;
+        @include ssm{
+            height: 300px !important;
+        }
     }
     .chartImg img{
         height: 520px !important;
+        @include ssm{
+            height: 300px !important;
+        }
     }
 }

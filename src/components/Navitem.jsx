@@ -39,7 +39,7 @@ const Navitem = () => {
               onClick={playSound} // Add onClick event to play sound
             >
               <img src={item.img} alt="" />
-              <p>{item.title}</p>
+              <span className='d-block'>{item.title}</span>
             </NavLink>
           </li>
         ))}

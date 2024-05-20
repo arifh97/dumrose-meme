@@ -16,8 +16,8 @@ const Footer = ({ pageName }) => {
   const location = useLocation();
   const name = location.pathname.split('/').join('');
   return (
-    <footer className="footer d-flex justify-content-between align-items-center">
-      <div className="footer-left d-flex align-item-center gap-2">
+    <footer className="footer d-sm-flex justify-content-center justify-content-sm-between align-items-center">
+      <div className="footer-left justify-content-center justify-content-sm-start d-flex align-item-center gap-2">
         <button className="menu">
           <img src={menuIcon} alt="Menu Icon" /> Menu
         </button>
@@ -33,7 +33,7 @@ const Footer = ({ pageName }) => {
           {name==''?'Home':name}
           </button>
       </div>
-      <div className="footer-right">
+      <div className="footer-right d-none d-sm-block">
         <p className="copyright">COPYRIGHT © {currentYear} $DumRose.</p>
       </div>
     </footer>

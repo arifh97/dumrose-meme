@@ -39,7 +39,7 @@ export default function Faq() {
           <div className="row">           
             <div className="col-12">
               <div className="section-title text-center">
-                <h2 className="mb-4">FAQ</h2>
+                <h2 className="mb-sm-4 mb-2">FAQ</h2>
               </div>
             </div>
             <div className="col-12">

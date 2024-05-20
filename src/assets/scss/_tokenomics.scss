@@ -6,13 +6,16 @@
     @include mmd{
         padding-inline: 30px;
     }
+    @include sm{
+        padding-inline: 0px;
+    }
     .chart-image{
         @include sm{
             text-align: center;
         }
         @include sm{
             img{
-                max-width: 300px;
+                max-width: 240px;
             }
         }
         

@@ -8,7 +8,7 @@
           max-width: 512px;
           width: 100%;
           @include sm{
-            max-width: 300px;
+            max-width: 240px;
             margin-bottom: 20px;
           }
         }
@@ -21,6 +21,9 @@
         h2 {
             line-height: 120%;
             margin-bottom: 24px;
+            @include ssm{
+                margin-bottom: 5px;
+            }
         }
         p {
             color: $text;
@@ -31,6 +34,7 @@
             max-width: 571px;
             @include sm{
                 margin-inline: auto;
+                font-size: 16px;
             }
         }
     }

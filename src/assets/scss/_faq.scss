@@ -18,6 +18,9 @@
         position: relative;
         background: $white;
         box-shadow: 2px 2px 0px 0px #262626 inset, -2px -2px 0px 0px #F0F0F0 inset, 4px 4px 0px 0px #7E7E7E inset;
+        @include ssm{            
+            padding: 12px;
+        }
         & .accordion-button {
             @include font-24;
             -webkit-text-stroke-width: 0.10000000149011612px;
@@ -26,6 +29,7 @@
             line-height: 160%;
             color: $black;
             padding: 0;
+            padding-right: 60px;
         }
         & .accordion-body {
             padding: 0;
@@ -37,6 +41,9 @@
             overflow: hidden;
             text-overflow: ellipsis;
             font-weight: 400;
+            @include ssm{
+                padding-top: 5px;
+            }
         }
     }
     & .accordion {
@@ -47,7 +54,7 @@
     }
     .accordion-button:not(.collapsed)::after {
         background-image: url('../img/minus.svg');
-        background-size: 40px;
+        background-size:40px;
         background-repeat: no-repeat;
         @include transition;
         position: absolute;
@@ -61,6 +68,12 @@
             right: -15px;
             width: 45px;
             height: 45px;
+        }
+        @include ssm{
+            width: 30px;
+            height: 30px;
+            background-size:30px;
+            right: 0px;
         }
     }
     .accordion-button::after {
@@ -78,6 +91,13 @@
             right: -15px;
             width: 45px;
             height: 45px;
+        }
+        
+        @include ssm{
+            width: 30px;
+            height: 30px;
+            background-size:30px;            
+            right: 0px;
         }
     }
 }

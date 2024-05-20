@@ -3,7 +3,7 @@
         margin-top: 40px;
         @include sm{
             margin-bottom: 0px;
-            margin-top: 10px;
+            margin-top: 5px;
         }
         li {
             margin-bottom: 30px;
@@ -17,7 +17,7 @@
                 width: 40px;
                 height: 40px;
                 object-fit: contain;
-                margin-bottom: 0px;
+                margin-bottom: 3px;
                 @include md{
                     width: 30px;
                     height: 30px;
@@ -27,7 +27,7 @@
                     height: 20px;
                 }
             }
-            p {
+            a {
                 color:$white;
                 text-align: center;
                 -webkit-text-stroke-width: 0.2806701958179474px;
@@ -41,6 +41,10 @@
                 @include sm{
                     font-size: 14px;
                 }
+            }
+            a.active {
+                color:#02007F;
+                -webkit-text-stroke-color: #02007F;
             }
         }
     }

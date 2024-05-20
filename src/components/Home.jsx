@@ -9,7 +9,7 @@ export default function Home() {
             <div className="row m-auto align-items-center  ">
               <div className="col-md-7 order-2 order-md-1">
                 <div className="home-content">
-                  <h1 className="mb-4">Welcome to DumRose! </h1>
+                  <h1 className="mb-2 mb-sm-4">Welcome to DumRose! </h1>
                   <p>
                     Rose was a relentless enforcer, handing out timeouts and
                     bans with cold, mechanical precision. Many degens found

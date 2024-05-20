@@ -86,7 +86,7 @@ export default function Chart() {
             </Tab.Content>
             <Nav className="d-flex align-items-center chart-tab-navs gap-2">
               <Nav.Item>
-                <Nav.Link eventKey="first" className="d-flex align-items-center gap-3"> 
+                <Nav.Link eventKey="first" className="d-flex align-items-center gap-1 gap-sm-3"> 
                   <figure>
                     <img src={dextools} alt="" />
                   </figure> 
@@ -94,7 +94,7 @@ export default function Chart() {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="second" className="d-flex align-items-center gap-3">
+                <Nav.Link eventKey="second" className="d-flex align-items-center gap-1  gap-sm-3">
                   <figure>
                     <img src={birdeye} alt="" />
                   </figure> 
@@ -102,7 +102,7 @@ export default function Chart() {
                 </Nav.Link>
               </Nav.Item>
               <Nav.Item>
-                <Nav.Link eventKey="third" className="d-flex align-items-center gap-3">
+                <Nav.Link eventKey="third" className="d-flex align-items-center gap-1 gap-sm-3">
                   <figure>
                     <img src={dexcreener} alt="" />
                   </figure> 

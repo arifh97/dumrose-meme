@@ -3,8 +3,8 @@
     @include mmd{
         padding-right: 20px;
     }
-    @include mmd{
-        padding-inline: 20px;
+    @include ssm{
+        padding-inline: 0px;
     }
     &-content {
         @include sm{
@@ -15,6 +15,9 @@
             @include mmd{
                 padding-top: 20px;
             }
+            @include ssm{
+                padding-top: 10px;
+            }
         }
         & p {
             color: $text;
@@ -23,6 +26,9 @@
             @include font-24;
             line-height: 160%;
             margin-bottom: 48px;
+            @include sm{
+                margin-bottom: 20px;
+            }
         }
     }
 
@@ -37,6 +43,9 @@
             @include sm{
                 max-width: 300px;
                 margin-inline: auto;
+            }
+            @include ssm{
+                max-width: 240px;
             }
         }
     }

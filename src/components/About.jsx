@@ -14,7 +14,7 @@ export default function About() {
           </div>
           <div className="col-md-7">
             <div className="about-content">
-              <h2 className="mb-4">About DumRose </h2>
+              <h2 className="mb-2 mb-sm-4">About DumRose </h2>
               <p>
               DumRose is a dumb and retarded community born out of the frustration with the restrictive Rose Telegram bot. Embracing the ethos of freedom, fun, and fuckery, DumRose stands as a haven for meme coin enthusiasts who reject unnecessary timeouts and bans.
               </p>

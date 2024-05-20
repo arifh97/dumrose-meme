@@ -160,12 +160,15 @@ input::-webkit-inner-spin-button {
 .boxed-btn{
     color: $black;
     font-family: $font-2;
-    font-size: 24px;
+    @include font-24;
     position: relative;
     z-index: 1;
     padding: 14px 26px;
     padding-bottom: 22px;
     transition: all .3s ease-in-out;
+    @include sm{
+        font-size: 16px;
+    }
     &:hover{
         color: $blue;
 
@@ -239,6 +242,9 @@ input::-webkit-inner-spin-button {
         padding: 12px 20px;
         margin-inline: auto;
     }
+    @include ssm{
+        width: 80%;
+    }
     p{
         width: 100%;
         -webkit-text-stroke-width: 0.10000000149011612px;
@@ -247,6 +253,10 @@ input::-webkit-inner-spin-button {
         @include font-20;
         font-weight: 400;
         line-height: 160%;
+        @include ssm{
+            width: 95%;
+            overflow: hidden;
+        }
     }
     button {
         position: absolute;
@@ -332,6 +342,7 @@ input::-webkit-inner-spin-button {
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 }
 

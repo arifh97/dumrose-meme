@@ -63,6 +63,9 @@
     @include sm {
         font-size: 40px;
     }
+    @include ssm {
+        font-size: 35px;
+    }
 }
 
 @mixin h2_font_size {
@@ -74,7 +77,7 @@
         font-size: 40px;
     }
     @include sm {
-        font-size: 35px;
+        font-size: 30px;
     }
 }
 

@@ -8,18 +8,8 @@ export default function Mainpage() {
   useEffect(() => {
     const playAudio = async () => {
       try {
-        const context = new (window.AudioContext || window.webkitAudioContext)();
-        await context.resume(); // Resume the context first
-
-        const response = await fetch(WindowsXPErrorSound); // Make sure this path is correct
-        const arrayBuffer = await response.arrayBuffer();
-        const audioBuffer = await context.decodeAudioData(arrayBuffer);
-
-        const source = context.createBufferSource();
-        source.buffer = audioBuffer;
-        source.connect(context.destination);
-
-        source.start(0);
+        const audio = new Audio(WindowsXPErrorSound);
+        await audio.play();
       } catch (error) {
         console.log('Error playing audio:', error);
       }
