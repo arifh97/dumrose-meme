@@ -1,23 +1,30 @@
 .navitem {
+    @include sm{
+        overflow-x: auto;
+    }
     ul {
         margin-top: 40px;
-        display: inline-flex;
-        overflow-x: scroll;
-        justify-content: center;
-        padding-inline: 20px;
         @include sm{
             margin-bottom: 0px;
             margin-top: 5px;
+            width: 570px;
+            margin-inline: auto;
+            display: flex; // Default to flex display
+            justify-content: center;
+            padding-inline: 20px;
+            list-style: none;
+            padding: 0;
+            overflow-x: auto; // Enable horizontal scrolling on small screens
+            -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
         }
         li {
             margin-bottom: 30px;
-            display: inline-block;
-            flex: 0 0 auto;
             cursor: pointer;
             @include sm{
                 margin-bottom: 5px;
                 margin-inline: 15px;
-                display: inline-block;
+                display: inline-block; // Ensure items are inline
+                flex: 0 0 auto; // Prevent flex items from shrinking
             }
             img {
                 width: 40px;

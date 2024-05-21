@@ -6,6 +6,9 @@
     @include ssm{
         padding-inline: 0px;
     }
+    @include sm{
+        padding-bottom: 80px;
+    }
     &-content {
         @include sm{
             text-align: center;

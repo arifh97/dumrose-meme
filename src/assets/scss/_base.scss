@@ -30,7 +30,7 @@ body {
     height: 100%;
 }
 .mainRow{
-    height: calc(100% - 67px);
+    
 }
 button:focus {
     outline: none;
@@ -116,23 +116,45 @@ nav ul li {
 }
 
 /* custom scroll bar  */
+/* Vertical scrollbar */
 ::-webkit-scrollbar {
-    width: 5px;
-  }
-  
-  ::-webkit-scrollbar-track {
+    width: 5px;  /* Vertical scrollbar width */
+    height: 5px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-track {
     box-shadow: inset 0 0 8px #02007F;
     border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb {
+}
+
+::-webkit-scrollbar-thumb {
     background: #02007F;
     border-radius: 10px;
-  }
-  
-  ::-webkit-scrollbar-thumb:hover {
+}
+
+::-webkit-scrollbar-thumb:hover {
     background: #02007F;
-  }
+}
+
+/* Horizontal scrollbar */
+::-webkit-scrollbar-horizontal {
+    height: 5px; /* Horizontal scrollbar height */
+}
+
+::-webkit-scrollbar-thumb-horizontal {
+    background: #02007F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track-horizontal {
+    box-shadow: inset 0 0 8px #02007F;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb-horizontal:hover {
+    background: #02007F;
+}
+
 
 /*Hide number spin button*/
 
@@ -241,6 +263,7 @@ input::-webkit-inner-spin-button {
         margin-top: 20px;
         padding: 12px 20px;
         margin-inline: auto;
+        margin-bottom: 30px;
     }
     @include ssm{
         width: 80%;
@@ -295,7 +318,6 @@ input::-webkit-inner-spin-button {
     box-shadow: -2.855px -2.855px 0px 0px #262626 inset, 2.855px 2.855px 0px 0px #F0F0F0 inset, -5.71px -5.71px 0px 0px #7E7E7E inset, 5.71px 5.71px 0px 0px #B1B1B1 inset;
     @include sm{
         height: auto;
-        padding-bottom: 100px;
     }
     &-topBar{
         background: var(--blue-200, #02007F);

@@ -8,6 +8,7 @@
     }
     @include sm{
         padding-inline: 0px;
+        padding-block: 70px;
     }
     .chart-image{
         @include sm{

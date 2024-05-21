@@ -6,10 +6,18 @@
         padding-top: 10%;
     }
     @include mmd{
-        padding-top: 300px;
     }
     .section-title{
         margin-bottom: 6%;
+        @include md{
+            padding-top: 200px;
+        }
+        p{
+            @include ssm{
+                width: 60%;
+                margin-inline: auto;
+            }
+        }
     }
     .single-item{
         padding: 24px;

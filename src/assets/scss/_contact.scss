@@ -1,5 +1,9 @@
 .contact {
     &-content {
+        @include sm{
+            padding-top: 70px;
+            padding-bottom: 70px;
+        }
         & h2 {
             margin-bottom: 24px;
             @include sm{

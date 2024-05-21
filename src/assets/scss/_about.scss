@@ -16,6 +16,7 @@
     &-content {
         @include sm{
             text-align: center;
+            padding-bottom: 50px;
         }
 
         h2 {
