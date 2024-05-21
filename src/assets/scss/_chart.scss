@@ -89,8 +89,8 @@
                 padding: 10px 15px 10px 8px;
             }
             @include ssm{
-                font-size: 14px;
-                padding: 10px 15px 10px 8px;
+                font-size: 12px;
+                padding: 8px 12px 6px 9px;
             }
             img{
                 max-width: 26px;
@@ -139,7 +139,7 @@
     .chartImg{
         height: 520px !important;
         @include ssm{
-            height: 300px !important;
+            height: auto !important;
         }
     }
     .chartImg img{

@@ -5,7 +5,8 @@
     @include lg{
         padding-top: 10%;
     }
-    @include mmd{
+    @include sm{
+        padding: 10% 0;
     }
     .section-title{
         margin-bottom: 6%;
@@ -14,7 +15,6 @@
         }
         p{
             @include ssm{
-                width: 60%;
                 margin-inline: auto;
             }
         }
@@ -25,9 +25,7 @@
         box-shadow: 2px 2px 0px 0px #262626 inset, -2px -2px 0px 0px #F0F0F0 inset, 4px 4px 0px 0px #7E7E7E inset;
         height: 100%;       
         display: inline-block;
-        @include ssm{
-            width: 70%;
-        }
+        
         .icon{
             width: 74px;
             height: 74px;

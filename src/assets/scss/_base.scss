@@ -264,7 +264,7 @@ input::-webkit-inner-spin-button {
         margin-bottom: 30px;
     }
     @include ssm{
-        width: 80%;
+        width: 100%;
     }
     p{
         width: 100%;
@@ -315,8 +315,10 @@ input::-webkit-inner-spin-button {
     background: var(--mono-100, #C3C3C3);
     box-shadow: -2.855px -2.855px 0px 0px #262626 inset, 2.855px 2.855px 0px 0px #F0F0F0 inset, -5.71px -5.71px 0px 0px #7E7E7E inset, 5.71px 5.71px 0px 0px #B1B1B1 inset;
     @include sm{
+        max-height: calc(100vh - 160px);
+        margin: 15px;
+        margin-bottom: 0;
         height: auto;
-        margin: 0 15px;
     }
     &-topBar{
         background: var(--blue-200, #02007F);
@@ -364,7 +366,7 @@ input::-webkit-inner-spin-button {
         height: 100%;
         padding: 10px;
         padding-inline: 20px;
-        overflow: scroll;
+        overflow: auto;
         display: flex;
         align-items: center;
         justify-content: center;
