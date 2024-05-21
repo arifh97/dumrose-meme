@@ -1,12 +1,18 @@
 .navitem {
     ul {
         margin-top: 40px;
+        display: inline-flex;
+        overflow-x: scroll;
+        justify-content: center;
+        padding-inline: 20px;
         @include sm{
             margin-bottom: 0px;
             margin-top: 5px;
         }
         li {
             margin-bottom: 30px;
+            display: inline-block;
+            flex: 0 0 auto;
             cursor: pointer;
             @include sm{
                 margin-bottom: 5px;
