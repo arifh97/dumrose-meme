@@ -29,9 +29,7 @@ body {
 #root{
     height: 100%;
 }
-.mainRow{
-    
-}
+
 button:focus {
     outline: none;
     border-color: transparent;
@@ -317,7 +315,8 @@ input::-webkit-inner-spin-button {
     background: var(--mono-100, #C3C3C3);
     box-shadow: -2.855px -2.855px 0px 0px #262626 inset, 2.855px 2.855px 0px 0px #F0F0F0 inset, -5.71px -5.71px 0px 0px #7E7E7E inset, 5.71px 5.71px 0px 0px #B1B1B1 inset;
     @include sm{
-        height: auto;
+        height: calc(100vh - 140px);
+        margin: 0 15px;
     }
     &-topBar{
         background: var(--blue-200, #02007F);
@@ -364,11 +363,15 @@ input::-webkit-inner-spin-button {
         display: block;
         height: 100%;
         padding: 10px;
+        padding-inline: 20px;
         overflow: scroll;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
+        @include sm{
+            height: auto;
+        }
     }
 }
 
