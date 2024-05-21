@@ -295,6 +295,7 @@ input::-webkit-inner-spin-button {
     box-shadow: -2.855px -2.855px 0px 0px #262626 inset, 2.855px 2.855px 0px 0px #F0F0F0 inset, -5.71px -5.71px 0px 0px #7E7E7E inset, 5.71px 5.71px 0px 0px #B1B1B1 inset;
     @include sm{
         height: auto;
+        padding-bottom: 100px;
     }
     &-topBar{
         background: var(--blue-200, #02007F);
