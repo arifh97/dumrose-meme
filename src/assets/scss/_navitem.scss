@@ -1,20 +1,19 @@
 .navitem {
     @include sm{
-        justify-content: start;
+        overlay: auto;
     }
     ul {
         margin-top: 40px;
         @include sm{
             margin-bottom: 0px;
             margin-top: 5px;
-            width: 570px;
+            width: max-content;
             margin-inline: auto;
             display: flex; // Default to flex display
             justify-content: center;
             padding-inline: 20px;
             list-style: none;
             padding: 0;
-            overflow-x: auto; // Enable horizontal scrolling on small screens
             -webkit-overflow-scrolling: touch; // Smooth scrolling on iOS
         }
         li {
