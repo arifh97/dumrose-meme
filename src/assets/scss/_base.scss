@@ -315,9 +315,8 @@ input::-webkit-inner-spin-button {
     background: var(--mono-100, #C3C3C3);
     box-shadow: -2.855px -2.855px 0px 0px #262626 inset, 2.855px 2.855px 0px 0px #F0F0F0 inset, -5.71px -5.71px 0px 0px #7E7E7E inset, 5.71px 5.71px 0px 0px #B1B1B1 inset;
     @include sm{
-        max-height: calc(100vh - 160px);
+        max-height: calc(100vh - 155px);
         margin: 15px;
-        margin-bottom: 0;
         height: auto;
     }
     &-topBar{
@@ -372,7 +371,7 @@ input::-webkit-inner-spin-button {
         justify-content: center;
         position: relative;
         @include sm{
-            height: auto;
+            height: calc(100vh - 212px);
         }
     }
 }

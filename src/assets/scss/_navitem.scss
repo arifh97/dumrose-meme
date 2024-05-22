@@ -1,6 +1,6 @@
 .navitem {
     @include sm{
-        overflow-x: auto;
+        justify-content: start;
     }
     ul {
         margin-top: 40px;
@@ -22,7 +22,7 @@
             cursor: pointer;
             @include sm{
                 margin-bottom: 5px;
-                margin-inline: 15px;
+                margin-inline: 20px;
                 display: inline-block; // Ensure items are inline
                 flex: 0 0 auto; // Prevent flex items from shrinking
             }
@@ -53,6 +53,8 @@
                 }
                 @include sm{
                     font-size: 14px;
+                    display: block;
+                    padding: 10px;
                 }
             }
             a.active {
