@@ -371,6 +371,7 @@ input::-webkit-inner-spin-button {
         justify-content: center;
         position: relative;
         @include sm{
+            display: block;
             height: calc(100vh - 230px);
         }
     }
