@@ -1,6 +1,6 @@
 .navitem {
     @include sm{
-        overlay: auto;
+        overflow: auto;
     }
     ul {
         margin-top: 40px;
